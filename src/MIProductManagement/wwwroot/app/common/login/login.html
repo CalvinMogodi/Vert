@@ -47,15 +47,15 @@
                         <md-icon flex="initial" style="margin: 34px 8px 0px 0px;">person</md-icon>
                         <md-input-container flex class="md-block">
                             <label>Username</label>
-                            <input ng-model="vm.login.username" type="email" required name="positionTitle" />
+                            <input ng-model="vm.login.username" type="email" autocomplete="off" autocorrect="off" autocapitalize="none" required name="positionTitle" />
                         </md-input-container>
                     </div>
 
                     <div layout="row">
                         <md-icon flex="initial" style="margin: 32px 8px 0px 0px;">lock</md-icon>
-                        <md-input-container flex class="md-block">
+                        <md-input-container flex class="md-block md-input-has-value">
                             <label>Password</label>
-                            <input ng-model="vm.login.password" type="password" required name="positionTitle" ng-pattern="/^[a-zA-Z0-9\s]*$/" />
+                            <input ng-model="vm.login.password" type="password"  autocomplete="off" required name="positionTitle" ng-pattern="/^[a-zA-Z0-9\s]*$/" />
                         </md-input-container>
                     </div>
                 </div>
